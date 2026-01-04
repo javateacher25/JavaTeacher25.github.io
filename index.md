@@ -6,7 +6,7 @@ title: Java Backend Classroom
 # 👨‍🏫 Java Backend Classroom
 
 **Farshad Fallah**  
-Professional Java Backend Developer • Instructor  
+Professional Java Backend Developer • Software Engineer • Instructor  
 
 📘 Based on **OCP (Oracle Certified Professional – Java SE)**
 

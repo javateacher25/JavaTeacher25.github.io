@@ -49,12 +49,20 @@ based on **real industry experience** and **OCP standards**.
 - Methods & arrays
 
 ### 3️⃣ Object-Oriented Programming (Java)
+
 - Classes & objects
 - Encapsulation
 - Inheritance
 - Polymorphism
 - Abstraction
-- Association, Aggregation, Composition
+- Association, Aggregation & Composition
+
+#### SOLID Principles
+- **S** – Single Responsibility Principle (SRP)
+- **O** – Open/Closed Principle (OCP)
+- **L** – Liskov Substitution Principle (LSP)
+- **I** – Interface Segregation Principle (ISP)
+- **D** – Dependency Inversion Principle (DIP)
 
 ### 4️⃣ Advanced Java SE
 - Exceptions

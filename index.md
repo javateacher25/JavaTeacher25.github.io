@@ -6,7 +6,6 @@ title: Java Backend Classroom
 <div class="container mt-4">
   <h1 class="display-4">Java Backend Classroom</h1>
   <p class="lead">Instructor: **Farshad Fallah** | Professional Java Developer & Instructor</p>
-  <p class="lead">📘 Based on **OCP (Oracle Certified Professional – Java SE)**</p>
 
   <hr class="my-4">
 
@@ -32,7 +31,6 @@ title: Java Backend Classroom
       </div>
     </div>
 
-    <!-- Java Fundamentals Card -->
     <div class="col-md-4">
       <div class="card shadow-sm">
         <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Java Fundamentals">
@@ -44,7 +42,6 @@ title: Java Backend Classroom
       </div>
     </div>
 
-    <!-- OOP Card -->
     <div class="col-md-4">
       <div class="card shadow-sm">
         <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="OOP">
@@ -57,19 +54,6 @@ title: Java Backend Classroom
     </div>
   </div>
 </section>
-
-
-<h3>Classroom Repositories</h3>
-  <div class="list-group">
-    <a href="https://github.com/JavaTeacher25/java-fundamentals" class="list-group-item list-group-item-action">Java Fundamentals</a>
-    <a href="https://github.com/JavaTeacher25/java-oop" class="list-group-item list-group-item-action">Java OOP</a>
-    <a href="https://github.com/JavaTeacher25/java-advanced-se" class="list-group-item list-group-item-action">Advanced Java SE</a>
-    <a href="https://github.com/JavaTeacher25/java-reactive" class="list-group-item list-group-item-action">Reactive Programming (RxJava)</a>
-    <a href="https://github.com/JavaTeacher25/jakarta-ee" class="list-group-item list-group-item-action">Jakarta EE</a>
-    <a href="https://github.com/JavaTeacher25/spring-framework" class="list-group-item list-group-item-action">Spring Framework</a>
-    <a href="https://github.com/JavaTeacher25/spring-cloud" class="list-group-item list-group-item-action">Spring Cloud</a>
-    <a href="https://github.com/JavaTeacher25/spring-ai" class="list-group-item list-group-item-action">Spring AI</a>
-  </div>
 
 <h3>Contact</h3>
   <p>Email: <a href="mailto:JavaTeacher25@gmail.com">JavaTeacher25@gmail.com</a></p>

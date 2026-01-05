@@ -1,47 +1,49 @@
-<!-- _layouts/default.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css"> <!-- Optional custom styles -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-
+    <meta name="description" content="Java Backend Classroom - Learn Java, Spring, Jakarta EE with Farshad Fallah">
+    <meta name="author" content="Farshad Fallah">
+    <title>{{ page.title | default: site.title }} - Java Backend Classroom</title>
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
 <body>
-<!-- Include Navbar -->
-{% include navbar.html %}
+    <!-- Navigation -->
+    {% include navbar.html %}
 
-<div class="container mt-4">
-    {{ content }}
-</div>
+    <!-- Main Content -->
+    <main>
+        {{ content }}
+    </main>
 
-<!-- Contact Section -->
-<section class="contact-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 mx-auto text-center">
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
                 <h3>Get In Touch</h3>
-                <div class="contact-item justify-content-center">
+                <div class="contact-item">
                     <i class="bi bi-envelope-fill"></i>
                     <a href="mailto:JavaTeacher25@gmail.com">JavaTeacher25@gmail.com</a>
                 </div>
-                <div class="contact-item justify-content-center">
+                <div class="contact-item">
                     <i class="bi bi-github"></i>
-                    <a href="https://github.com/JavaTeacher25" target="_blank">github.com/JavaTeacher25</a>
+                    <a href="https://github.com/JavaTeacher25" target="_blank" rel="noopener">github.com/JavaTeacher25</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer>
-    <div class="container">
-        <p class="mb-0">© 2026 Java Backend Classroom | All rights reserved</p>
-    </div>
-</footer>
-<!-- Popper.js and Bootstrap 5 JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Java Backend Classroom | Farshad Fallah | All rights reserved</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -3,18 +3,28 @@ layout: default
 title: UML
 ---
 
-[Home](/) · [Fundamentals](fundamentals.html) · [Java](java-fundamentals.html) · [OOP](oop.html) · [UML](uml.html) · [Advanced](advanced-java.html) · [Reactive](reactive.html) · [Jakarta EE](jakarta-ee.html) · [Spring](spring.html) · [Cloud](spring-cloud.html) · [Spring AI](spring-ai.html)
+[Home](/) · [Fundamentals](fundamentals.html) · [Java](java-fundamentals.html) · [OOP](oop.html) · [UML](uml.html) · [Advanced](advanced-java.html) · [Reactive (RxJava)](reactive.html) · [Jakarta EE](jakarta-ee.html) · [Spring](spring.html) · [Cloud](spring-cloud.html) · [Spring AI](spring-ai.html)
 
----
+<div class="container mt-4">
+  <h1>UML (Unified Modeling Language)</h1>
 
-## UML (Unified Modeling Language)
+<h2>Why UML?</h2>
+  <p>UML helps us **design before coding**, providing a visual representation of system architecture and relationships.</p>
 
-- Why UML: design before coding
-- Class diagrams
-- Relationships:
-  - Association
-  - Aggregation
-  - Composition
-  - Inheritance
-  - Dependency
-- UML → Java code mapping
+<h2>Covered Diagrams</h2>
+  <ul class="list-group">
+    <li class="list-group-item">Class Diagrams</li>
+    <li class="list-group-item">Relationship Diagrams:
+      <ul>
+        <li>Association</li>
+        <li>Aggregation</li>
+        <li>Composition</li>
+        <li>Inheritance</li>
+        <li>Dependency</li>
+      </ul>
+    </li>
+  </ul>
+
+<h2>UML → Java Code Mapping</h2>
+  <p>Understanding how to translate UML diagrams to **Java code** is a key skill in Object-Oriented Design.</p>
+</div>

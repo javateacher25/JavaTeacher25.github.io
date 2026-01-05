@@ -2,51 +2,44 @@
 layout: default
 title: Java Backend Classroom
 ---
-[Home](/) · [Fundamentals](fundamentals.html) · [Java](java-fundamentals.html) · [OOP](oop.html) · [UML](uml.html) · [Advanced](advanced-java.html) · [Reactive](reactive.html) · [Jakarta EE](jakarta-ee.html) · [Spring](spring.html) · [Cloud](spring-cloud.html) · [Spring AI](spring-ai.html)
 
----
+<div class="container mt-4">
+  <h1 class="display-4">Java Backend Classroom</h1>
+  <p class="lead">Instructor: **Farshad Fallah** | Professional Java Developer & Instructor</p>
+  <p class="lead">📘 Based on **OCP (Oracle Certified Professional – Java SE)**</p>
 
-**Farshad Fallah**  
-Professional Java Backend Developer • Software Engineer • Instructor  
-📘 Based on **OCP (Oracle Certified Professional – Java SE)**
+  <hr class="my-4">
 
----
+<h2>Welcome</h2>
+  <p>This site is the classroom hub for **Java Backend Development** — from fundamentals to enterprise systems and AI.</p>
 
-## Welcome
+<h3>Course Sections</h3>
+  <ul class="list-group">
+    <li class="list-group-item"><a href="fundamentals.html">Development Fundamentals</a></li>
+    <li class="list-group-item"><a href="java-fundamentals.html">Java Fundamentals</a></li>
+    <li class="list-group-item"><a href="oop.html">Object-Oriented Programming (includes SOLID)</a></li>
+    <li class="list-group-item"><a href="uml.html">UML</a></li>
+    <li class="list-group-item"><a href="advanced-java.html">Advanced Java SE</a></li>
+    <li class="list-group-item"><a href="reactive.html">Reactive Programming (RxJava)</a></li>
+    <li class="list-group-item"><a href="jakarta-ee.html">Jakarta EE</a></li>
+    <li class="list-group-item"><a href="spring.html">Spring Framework</a></li>
+    <li class="list-group-item"><a href="spring-cloud.html">Spring Cloud</a></li>
+    <li class="list-group-item"><a href="spring-ai.html">Spring AI</a></li>
+  </ul>
 
-This site is the classroom hub for **Java Backend Development** — from fundamentals to enterprise systems and AI.
+<h3>Classroom Repositories</h3>
+  <div class="list-group">
+    <a href="https://github.com/JavaTeacher25/java-fundamentals" class="list-group-item list-group-item-action">Java Fundamentals</a>
+    <a href="https://github.com/JavaTeacher25/java-oop" class="list-group-item list-group-item-action">Java OOP</a>
+    <a href="https://github.com/JavaTeacher25/java-advanced-se" class="list-group-item list-group-item-action">Advanced Java SE</a>
+    <a href="https://github.com/JavaTeacher25/java-reactive" class="list-group-item list-group-item-action">Reactive Programming (RxJava)</a>
+    <a href="https://github.com/JavaTeacher25/jakarta-ee" class="list-group-item list-group-item-action">Jakarta EE</a>
+    <a href="https://github.com/JavaTeacher25/spring-framework" class="list-group-item list-group-item-action">Spring Framework</a>
+    <a href="https://github.com/JavaTeacher25/spring-cloud" class="list-group-item list-group-item-action">Spring Cloud</a>
+    <a href="https://github.com/JavaTeacher25/spring-ai" class="list-group-item list-group-item-action">Spring AI</a>
+  </div>
 
----
-
-## Course Sections
-
-- [Development Fundamentals](fundamentals.html)
-- [Java Fundamentals](java-fundamentals.html)
-- [Object-Oriented Programming (includes SOLID)](oop.html)
-- [UML](uml.html)
-- [Advanced Java SE](advanced-java.html)
-- [Reactive Programming (RxJava)](reactive.html)
-- [Jakarta EE](jakarta-ee.html)
-- [Spring Framework](spring.html)
-- [Spring Cloud](spring-cloud.html)
-- [Spring AI](spring-ai.html)
-
----
-
-## Classroom Repositories
-
-- Java Fundamentals: https://github.com/JavaTeacher25/java-fundamentals
-- Java OOP: https://github.com/JavaTeacher25/java-oop
-- Advanced Java SE: https://github.com/JavaTeacher25/java-advanced-se
-- Reactive Programming: https://github.com/JavaTeacher25/java-reactive
-- Jakarta EE: https://github.com/JavaTeacher25/jakarta-ee
-- Spring Framework: https://github.com/JavaTeacher25/spring-framework
-- Spring Cloud: https://github.com/JavaTeacher25/spring-cloud
-- Spring AI: https://github.com/JavaTeacher25/spring-ai
-
----
-
-## Contact
-
-📧 JavaTeacher25@gmail.com  
-💻 https://github.com/JavaTeacher25
+<h3>Contact</h3>
+  <p>Email: <a href="mailto:JavaTeacher25@gmail.com">JavaTeacher25@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/JavaTeacher25">https://github.com/JavaTeacher25</a></p>
+</div>

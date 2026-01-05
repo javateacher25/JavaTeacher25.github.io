@@ -5,23 +5,28 @@ title: Reactive Programming (RxJava)
 
 [Home](/) · [Fundamentals](fundamentals.html) · [Java](java-fundamentals.html) · [OOP](oop.html) · [UML](uml.html) · [Advanced](advanced-java.html) · [Reactive (RxJava)](reactive.html) · [Jakarta EE](jakarta-ee.html) · [Spring](spring.html) · [Cloud](spring-cloud.html) · [Spring AI](spring-ai.html)
 
----
+<div class="container mt-4">
+  <h1>Reactive Programming (RxJava)</h1>
 
-## Reactive Programming (RxJava)
+<h2>Concepts</h2>
+  <ul class="list-group">
+    <li class="list-group-item">Reactive programming fundamentals</li>
+    <li class="list-group-item">Event streams and data flow</li>
+    <li class="list-group-item">Asynchronous workflows</li>
+    <li class="list-group-item">Backpressure (concept + why it matters)</li>
+    <li class="list-group-item">Error handling in streams</li>
+  </ul>
 
-### Concepts
-- Reactive thinking & asynchronous workflows
-- Event streams and data flow
-- Backpressure (concept + why it matters)
-- Error handling in streams
+<h2>RxJava Topics</h2>
+  <ul class="list-group">
+    <li class="list-group-item">`Observable`, `Flowable`</li>
+    <li class="list-group-item">`Single`, `Maybe`, `Completable`</li>
+    <li class="list-group-item">Operators: `map`, `flatMap`, `filter`, `zip`, `merge`</li>
+    <li class="list-group-item">Schedulers & threading (`io`, `computation`, custom)</li>
+    <li class="list-group-item">Hot vs Cold Observables</li>
+    <li class="list-group-item">Subjects (intro)</li>
+  </ul>
 
-### RxJava Topics
-- `Observable`, `Flowable`
-- `Single`, `Maybe`, `Completable`
-- Operators: `map`, `flatMap`, `filter`, `zip`, `merge`
-- Schedulers & threading (`io`, `computation`, custom)
-- Hot vs Cold Observables
-- Subjects (intro)
-
-### Goal
-Write clean, composable asynchronous code using **RxJava** patterns.
+<h3>Goal</h3>
+  <p>Write clean, composable asynchronous code using <strong>RxJava</strong> patterns.</p>
+</div>

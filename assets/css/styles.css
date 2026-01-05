@@ -1,110 +1,314 @@
-/* Custom Styles for Navbar */
-.navbar-nav .nav-item .nav-link {
-  transition: all 0.3s ease;
-}
+ :root {
+            --primary-color: #007396;
+            --secondary-color: #f89820;
+            --dark-bg: #1a1a2e;
+            --light-bg: #f8f9fa;
+        }
 
-.navbar-nav .nav-item .nav-link:hover {
-  color: #ff9800; /* Change color on hover */
-  text-decoration: underline; /* Add underline effect */
-}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
 
-.navbar-nav .nav-item.active .nav-link {
-  color: #ff9800; /* Highlight active link with color */
-}
+        /* Navbar */
+        .navbar {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #16213e 100%);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
 
-.navbar-dark .navbar-toggler-icon {
-  background-color: #ff9800; /* Change color of hamburger icon */
-}
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white !important;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
 
-/* Add some padding and border radius for dropdown items */
-.dropdown-menu .dropdown-item {
-  padding: 10px 20px;
-  border-radius: 5px;
-}
+        .navbar-brand i {
+            font-size: 2rem;
+            color: var(--secondary-color);
+        }
 
-.dropdown-menu .dropdown-item:hover {
-  background-color: #ff9800; /* Highlight dropdown items on hover */
-  color: #fff;
-}
+        .nav-link {
+            color: rgba(255,255,255,0.85) !important;
+            font-weight: 500;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
 
-.hero {
-  background: url('https://via.placeholder.com/1920x600') no-repeat center center;
-  background-size: cover;
-  color: white;
-}
+        .nav-link:hover {
+            color: var(--secondary-color) !important;
+            transform: translateY(-2px);
+        }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background: var(--secondary-color);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
 
-.hero p {
-  font-size: 1.25rem;
-  margin-bottom: 20px;
-}
+        .nav-link:hover::after {
+            width: 80%;
+        }
 
-.hero .btn {
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  background-color: #ff9800;
-  border: none;
-  transition: all 0.3s ease;
-}
+        .dropdown-menu {
+            background: rgba(26, 26, 46, 0.98);
+            border: none;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+        }
 
-.hero .btn:hover {
-  background-color: #e68900;
-}
+        .dropdown-item {
+            color: rgba(255,255,255,0.85);
+            transition: all 0.3s ease;
+        }
 
-.card {
-  border-radius: 10px;
-}
+        .dropdown-item:hover {
+            background: var(--secondary-color);
+            color: white;
+            transform: translateX(5px);
+        }
 
-.card-body {
-  text-align: center;
-}
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
 
-.card-title {
-  font-weight: bold;
-}
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><text x="10" y="50" font-size="60" opacity="0.05" fill="white">{"{ }"}</text></svg>') repeat;
+            animation: float 20s linear infinite;
+        }
 
-.card img {
-  border-radius: 10px;
-}
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100px); }
+        }
 
-.card .btn {
-  margin-top: 10px;
-}
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
 
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  padding: 20px 0;
-}
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease;
+        }
 
-footer h5 {
-  font-size: 1.25rem;
-  margin-bottom: 10px;
-}
+        .hero .lead {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease;
+        }
 
-footer p {
-  font-size: 1rem;
-  margin: 5px 0;
-}
+        .hero .instructor-name {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
 
-footer a {
-  text-decoration: none;
-}
+        .hero .btn-primary {
+            background: var(--secondary-color);
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            box-shadow: 0 8px 20px rgba(248, 152, 32, 0.3);
+            transition: all 0.3s ease;
+            animation: fadeInUp 1.2s ease;
+        }
 
-footer a:hover {
-  text-decoration: underline;
-}
+        .hero .btn-primary:hover {
+            background: #e08a1c;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(248, 152, 32, 0.4);
+        }
 
-footer i {
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
-}
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-footer i:hover {
-  color: #ff9800;
-}
+        /* Course Cards */
+        .course-section {
+            padding: 80px 0;
+            background: var(--light-bg);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--dark-bg);
+            margin-bottom: 1rem;
+        }
+
+        .section-title .underline {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            height: 100%;
+            border: none;
+        }
+
+        .course-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        .course-card .card-img-wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .course-card .card-img-wrapper i {
+            font-size: 5rem;
+            color: rgba(255,255,255,0.9);
+            transition: all 0.4s ease;
+        }
+
+        .course-card:hover .card-img-wrapper i {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .course-card .card-body {
+            padding: 2rem;
+        }
+
+        .course-card .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark-bg);
+            margin-bottom: 1rem;
+        }
+
+        .course-card .card-text {
+            color: #6c757d;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .course-card .btn-outline-primary {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            font-weight: 600;
+            padding: 10px 30px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .course-card .btn-outline-primary:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateX(5px);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, var(--dark-bg), #16213e);
+            color: white;
+            padding: 60px 0;
+        }
+
+        .contact-section h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+        }
+
+        .contact-item i {
+            font-size: 2rem;
+            color: var(--secondary-color);
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            color: rgba(255,255,255,0.7);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .lead {
+                font-size: 1.1rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }

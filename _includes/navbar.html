@@ -1,66 +1,52 @@
-<!-- _includes/navbar.html -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
-        <!-- Branding logo (optional) -->
-        <a class="navbar-brand" href="/">Java Backend Classroom</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="/">
+            <i class="bi bi-code-slash"></i>
+            Java Backend Classroom
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <!-- Home Link -->
                 <li class="nav-item">
-                    <a class="nav-link" href="/" aria-current="page">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
-
-                <!-- Dropdowns for Java Fundamentals and Spring Framework -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                         Development Fundamentals
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="fundamentals.html">Overview</a></li>
                         <li><a class="dropdown-item" href="java-fundamentals.html">Java Basics</a></li>
                     </ul>
                 </li>
-
-                <!-- Repeat this structure for all other main topics -->
-
-                <!-- Java Fundamentals -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarJavaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                         Java Fundamentals
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarJavaDropdown">
+                    <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="java-fundamentals.html">Java Syntax</a></li>
                         <li><a class="dropdown-item" href="oop.html">Object-Oriented Programming</a></li>
                         <li><a class="dropdown-item" href="advanced-java.html">Advanced Java SE</a></li>
                     </ul>
                 </li>
-
-                <!-- Object-Oriented Programming (OOP) -->
                 <li class="nav-item">
-                    <a class="nav-link" href="oop.html">Object-Oriented Programming (OOP)</a>
+                    <a class="nav-link" href="oop.html">OOP</a>
                 </li>
-
-                <!-- Advanced Java -->
                 <li class="nav-item">
                     <a class="nav-link" href="advanced-java.html">Advanced Java</a>
                 </li>
-
-                <!-- Spring Framework -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarSpringDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                         Spring Framework
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarSpringDropdown">
+                    <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="spring.html">Spring Core</a></li>
                         <li><a class="dropdown-item" href="spring-cloud.html">Spring Cloud</a></li>
                         <li><a class="dropdown-item" href="spring-ai.html">Spring AI</a></li>
                     </ul>
                 </li>
-
-                <!-- Reactive (RxJava) -->
                 <li class="nav-item">
                     <a class="nav-link" href="reactive.html">Reactive (RxJava)</a>
                 </li>

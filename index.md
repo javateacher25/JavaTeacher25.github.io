@@ -1,4 +1,4 @@
- <section class="hero">
+    <section class="hero">
         <div class="container hero-content">
             <div class="row align-items-center">
                 <div class="col-lg-8 mx-auto text-center">
@@ -66,5 +66,3 @@
             </div>
         </div>
     </section>
-
-   

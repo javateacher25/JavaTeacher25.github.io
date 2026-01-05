@@ -168,15 +168,15 @@ title: Development Fundamentals
         </div>
 
         <div class="learning-path">
-            <h2><i class="bi bi-signpost-2"></i> Learning Path</h2>
-            <p>These fundamentals are taught in this order for a reason:</p>
-            <ol>
-                <li><strong>Computer History</strong> - Understand where we came from</li>
-                <li><strong>Digital Circuits</strong> - Learn how computers actually work</li>
-                <li><strong>Algorithms & Data Structures</strong> - Master problem-solving</li>
-                <li><strong>Git</strong> - Learn to manage your code professionally</li>
-            </ol>
-            <p>After mastering these fundamentals, you'll be ready to dive into Java SE with a solid foundation that will serve you throughout your entire career.</p>
+            <h2><i class="bi bi-signpost-2"></i> Our Approach</h2>
+            <p>In this module, we focus on <strong>understanding the basics</strong> rather than mastering everything. Our goal is to give you:</p>
+            <ul>
+                <li><strong>How Computers Work</strong> - The fundamental concepts behind computing</li>
+                <li><strong>What Programming Means</strong> - Understanding the nature of software development</li>
+                <li><strong>How Algorithms Are Made</strong> - The thinking process behind problem-solving</li>
+                <li><strong>Essential Tools</strong> - Git for managing your code from day one</li>
+            </ul>
+            <p>We're building your <em>conceptual foundation</em> - you'll dive deeper into each area as you progress through Java SE, Jakarta EE, and Spring.</p>
         </div>
 
         <div class="next-steps">
@@ -257,15 +257,15 @@ title: Development Fundamentals
 }
 
 .learning-path {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
+    background: #fff;
+    border: 3px solid var(--primary-color);
     padding: 2.5rem;
     border-radius: 15px;
     margin: 3rem 0;
 }
 
 .learning-path h2 {
-    color: white;
+    color: var(--primary-color);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -276,7 +276,7 @@ title: Development Fundamentals
     font-size: 2rem;
 }
 
-.learning-path ol {
+.learning-path ul {
     margin-left: 2rem;
     margin-top: 1.5rem;
 }
@@ -284,11 +284,23 @@ title: Development Fundamentals
 .learning-path li {
     margin-bottom: 1rem;
     font-size: 1.1rem;
+    color: #333;
 }
 
 .learning-path p {
-    color: white;
+    color: #555;
     margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.learning-path strong {
+    color: var(--primary-color);
+}
+
+.learning-path em {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 600;
 }
 
 .next-steps {

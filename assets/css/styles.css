@@ -1,0 +1,92 @@
+/* Custom Styles for Navbar */
+.navbar-nav .nav-item .nav-link {
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ff9800; /* Change color on hover */
+  text-decoration: underline; /* Add underline effect */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: #ff9800; /* Highlight active link with color */
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-color: #ff9800; /* Change color of hamburger icon */
+}
+
+/* Add some padding and border radius for dropdown items */
+.dropdown-menu .dropdown-item {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #ff9800; /* Highlight dropdown items on hover */
+  color: #fff;
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #ff9800;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #e68900;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card .btn {
+  margin-top: 10px;
+}
+
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer i {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+footer i:hover {
+  color: #ff9800;
+}

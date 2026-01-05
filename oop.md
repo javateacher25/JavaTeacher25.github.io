@@ -3,7 +3,7 @@ layout: default
 title: Object-Oriented Programming
 ---
 
-[Home](/) · [Fundamentals](fundamentals.html) · [Java](java-fundamentals.html) · [OOP](oop.html) · [UML](uml.html) · [Advanced](advanced-java.html) · [Reactive (RxJava)](reactive.html) · [Jakarta EE](jakarta-ee.html) · [Spring](spring.html) · [Cloud](spring-cloud.html) · [Spring AI](spring-ai.html)
+[Home](/) · [Development Fundamentals](fundamentals.html) · [Java Fundamentals](java-fundamentals.html) · [OOP](oop.html) · [Advanced Java](advanced-java.html) · [Jakarta EE](jakarta-ee.html) · [Spring Framework](spring.html)
 
 <div class="container mt-4">
   <h1>Object-Oriented Programming (Java)</h1>

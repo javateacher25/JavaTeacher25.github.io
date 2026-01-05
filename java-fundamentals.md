@@ -3,17 +3,21 @@ layout: default
 title: Java Fundamentals
 ---
 
-[Home](/) · [Fundamentals](fundamentals.html) · [Java](java-fundamentals.html) · [OOP](oop.html) · [UML](uml.html) · [Advanced](advanced-java.html) · [Reactive](reactive.html) · [Jakarta EE](jakarta-ee.html) · [Spring](spring.html) · [Cloud](spring-cloud.html) · [Spring AI](spring-ai.html)
+[Home](/) · [Development Fundamentals](fundamentals.html) · [Java Fundamentals](java-fundamentals.html) · [OOP](oop.html) · [Advanced Java](advanced-java.html) · [Jakarta EE](jakarta-ee.html) · [Spring Framework](spring.html)
 
----
+<div class="container mt-4">
+  <h1>Java Fundamentals</h1>
 
-## Java Fundamentals
+<h2>Core Java Topics</h2>
+  <ul class="list-group">
+    <li class="list-group-item">Java syntax & structure</li>
+    <li class="list-group-item">Variables & data types</li>
+    <li class="list-group-item">Conditions & loops</li>
+    <li class="list-group-item">Methods</li>
+    <li class="list-group-item">Arrays</li>
+    <li class="list-group-item">Debugging basics</li>
+  </ul>
 
-- Java syntax & structure
-- Variables & data types
-- Conditions & loops
-- Methods
-- Arrays
-- Debugging basics
-
-📘 Taught with an **OCP-style mindset** (understanding > memorizing).
+<h3>OCP-style Mindset</h3>
+  <p>Focus on understanding Java **concepts** and **best practices** rather than just memorizing syntax.</p>
+</div>

@@ -13,19 +13,15 @@ title: Java Backend Classroom
 <h2>Welcome</h2>
   <p>This site is the classroom hub for **Java Backend Development** — from fundamentals to enterprise systems and AI.</p>
 
-<h3>Course Sections</h3>
-  <ul class="list-group">
-    <li class="list-group-item"><a href="fundamentals.html">Development Fundamentals</a></li>
-    <li class="list-group-item"><a href="java-fundamentals.html">Java Fundamentals</a></li>
-    <li class="list-group-item"><a href="oop.html">Object-Oriented Programming (includes SOLID)</a></li>
-    <li class="list-group-item"><a href="uml.html">UML</a></li>
-    <li class="list-group-item"><a href="advanced-java.html">Advanced Java SE</a></li>
-    <li class="list-group-item"><a href="reactive.html">Reactive Programming (RxJava)</a></li>
-    <li class="list-group-item"><a href="jakarta-ee.html">Jakarta EE</a></li>
-    <li class="list-group-item"><a href="spring.html">Spring Framework</a></li>
-    <li class="list-group-item"><a href="spring-cloud.html">Spring Cloud</a></li>
-    <li class="list-group-item"><a href="spring-ai.html">Spring AI</a></li>
-  </ul>
+<h2>Course Sections</h2>
+  <div class="list-group">
+    <a href="fundamentals.html" class="list-group-item list-group-item-action">Development Fundamentals</a>
+    <a href="java-fundamentals.html" class="list-group-item list-group-item-action">Java Fundamentals</a>
+    <a href="oop.html" class="list-group-item list-group-item-action">Object-Oriented Programming (OOP)</a>
+    <a href="advanced-java.html" class="list-group-item list-group-item-action">Advanced Java</a>
+    <a href="jakarta-ee.html" class="list-group-item list-group-item-action">Jakarta EE</a>
+    <a href="spring.html" class="list-group-item list-group-item-action">Spring Framework</a>
+  </div>
 
 <h3>Classroom Repositories</h3>
   <div class="list-group">

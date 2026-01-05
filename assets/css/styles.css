@@ -7,6 +7,25 @@
     --light-bg: #f8f9fa;
     --jakarta-color: #6f42c1;
     --spring-color: #6db33f;
+    
+    /* Light theme colors */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --text-primary: #333333;
+    --text-secondary: #6c757d;
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+}
+
+/* Dark theme colors */
+body.dark-theme {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --text-primary: #e8e9ed;
+    --text-secondary: #b8b9bd;
+    --card-bg: #252c48;
+    --border-color: #2d3548;
+    --light-bg: #16213e;
 }
 
 * {
@@ -19,6 +38,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
     line-height: 1.6;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Navbar Styles */
@@ -38,6 +60,32 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.85);
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.theme-toggle:hover {
+    color: var(--secondary-color);
+    background: rgba(248, 152, 32, 0.1);
+    transform: rotate(20deg);
 }
 
 .navbar-brand {
@@ -221,7 +269,8 @@ body {
 /* Course Section */
 .course-section {
     padding: 80px 0;
-    background: var(--light-bg);
+    background: var(--bg-secondary);
+    transition: background-color 0.3s ease;
 }
 
 .section-title {
@@ -232,13 +281,13 @@ body {
 .section-title h2 {
     font-size: 2.8rem;
     font-weight: 800;
-    color: var(--dark-bg);
+    color: var(--text-primary);
     margin-bottom: 1rem;
 }
 
 .section-title p {
     font-size: 1.2rem;
-    color: #6c757d;
+    color: var(--text-secondary);
     margin-bottom: 1rem;
 }
 
@@ -258,7 +307,7 @@ body {
 
 /* Course Cards */
 .course-card {
-    background: white;
+    background: var(--card-bg);
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 40px rgba(0,0,0,0.08);
@@ -268,9 +317,17 @@ body {
     flex-direction: column;
 }
 
+body.dark-theme .course-card {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
 .course-card:hover {
     transform: translateY(-15px);
     box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+body.dark-theme .course-card:hover {
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
 
 .card-img-wrapper {
@@ -331,12 +388,12 @@ body {
 .card-title {
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--dark-bg);
+    color: var(--text-primary);
     margin-bottom: 1rem;
 }
 
 .card-text {
-    color: #6c757d;
+    color: var(--text-secondary);
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
@@ -428,7 +485,8 @@ footer p {
 /* Content Pages */
 .content-page {
     padding: 80px 0;
-    background: white;
+    background: var(--bg-primary);
+    transition: background-color 0.3s ease;
 }
 
 .content-page .container {
@@ -438,7 +496,7 @@ footer p {
 .content-page h1 {
     font-size: 3rem;
     font-weight: 800;
-    color: var(--dark-bg);
+    color: var(--text-primary);
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 4px solid var(--primary-color);
@@ -447,7 +505,7 @@ footer p {
 .content-page h2 {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--dark-bg);
+    color: var(--text-primary);
     margin-top: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -461,7 +519,7 @@ footer p {
 }
 
 .content-page p {
-    color: #555;
+    color: var(--text-secondary);
     line-height: 1.8;
     margin-bottom: 1.5rem;
 }
@@ -472,13 +530,13 @@ footer p {
 }
 
 .content-page li {
-    color: #555;
+    color: var(--text-secondary);
     line-height: 1.8;
     margin-bottom: 0.5rem;
 }
 
 .content-page code {
-    background: var(--light-bg);
+    background: var(--bg-secondary);
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
     font-family: 'Courier New', monospace;
@@ -512,6 +570,10 @@ footer p {
         display: block;
     }
 
+    .navbar-right {
+        order: 2;
+    }
+
     .navbar-nav {
         display: none;
         flex-direction: column;
@@ -522,6 +584,8 @@ footer p {
         right: 0;
         background: var(--dark-bg);
         padding: 2rem;
+        order: 3;
+        width: 100%;
     }
 
     .navbar-nav.active {

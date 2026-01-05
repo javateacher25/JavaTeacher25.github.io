@@ -5,9 +5,14 @@
             <i class="bi bi-code-slash"></i>
             Java Backend Classroom
         </a>
-        <button class="navbar-toggler" onclick="toggleNav()">
-            <i class="bi bi-list"></i>
-        </button>
+        <div class="navbar-right">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                <i class="bi bi-sun-fill" id="theme-icon"></i>
+            </button>
+            <button class="navbar-toggler" onclick="toggleNav()">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
         <ul class="navbar-nav" id="navbarNav">
             <li class="nav-item">
                 <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
@@ -29,8 +34,41 @@
 </nav>
 
 <script>
+// Toggle mobile navigation
 function toggleNav() {
     const nav = document.getElementById('navbarNav');
     nav.classList.toggle('active');
 }
+
+// Theme toggle functionality
+function toggleTheme() {
+    const body = document.body;
+    const themeIcon = document.getElementById('theme-icon');
+    
+    if (body.classList.contains('dark-theme')) {
+        body.classList.remove('dark-theme');
+        themeIcon.classList.remove('bi-moon-fill');
+        themeIcon.classList.add('bi-sun-fill');
+        localStorage.setItem('theme', 'light');
+    } else {
+        body.classList.add('dark-theme');
+        themeIcon.classList.remove('bi-sun-fill');
+        themeIcon.classList.add('bi-moon-fill');
+        localStorage.setItem('theme', 'dark');
+    }
+}
+
+// Load saved theme on page load
+(function() {
+    const savedTheme = localStorage.getItem('theme');
+    const themeIcon = document.getElementById('theme-icon');
+    
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+        if (themeIcon) {
+            themeIcon.classList.remove('bi-sun-fill');
+            themeIcon.classList.add('bi-moon-fill');
+        }
+    }
+})();
 </script>

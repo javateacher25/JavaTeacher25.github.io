@@ -192,7 +192,7 @@ title: Development Fundamentals
 <style>
 .content-page .lead {
     font-size: 1.2rem;
-    color: #6c757d;
+    color: var(--text-secondary);
     margin-bottom: 3rem;
     line-height: 1.8;
 }
@@ -216,15 +216,16 @@ title: Development Fundamentals
 }
 
 .topic-card {
-    background: var(--light-bg);
+    background: var(--bg-secondary);
     padding: 2rem;
     border-radius: 15px;
     margin-top: 1.5rem;
     border-left: 5px solid var(--secondary-color);
+    transition: background-color 0.3s ease;
 }
 
 .topic-card h3 {
-    color: var(--dark-bg);
+    color: var(--text-primary);
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     font-size: 1.4rem;
@@ -250,6 +251,7 @@ title: Development Fundamentals
 .topic-card li {
     margin-bottom: 0.8rem;
     line-height: 1.7;
+    color: var(--text-secondary);
 }
 
 .topic-card strong {
@@ -257,11 +259,12 @@ title: Development Fundamentals
 }
 
 .learning-path {
-    background: #fff;
+    background: var(--card-bg);
     border: 3px solid var(--primary-color);
     padding: 2.5rem;
     border-radius: 15px;
     margin: 3rem 0;
+    transition: background-color 0.3s ease;
 }
 
 .learning-path h2 {
@@ -284,11 +287,11 @@ title: Development Fundamentals
 .learning-path li {
     margin-bottom: 1rem;
     font-size: 1.1rem;
-    color: #333;
+    color: var(--text-secondary);
 }
 
 .learning-path p {
-    color: #555;
+    color: var(--text-secondary);
     margin-bottom: 1rem;
     line-height: 1.8;
 }
@@ -306,9 +309,10 @@ title: Development Fundamentals
 .next-steps {
     text-align: center;
     padding: 3rem;
-    background: var(--light-bg);
+    background: var(--bg-secondary);
     border-radius: 15px;
     margin-top: 3rem;
+    transition: background-color 0.3s ease;
 }
 
 .next-steps h2 {
@@ -316,7 +320,7 @@ title: Development Fundamentals
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    color: var(--dark-bg);
+    color: var(--text-primary);
     margin-bottom: 1.5rem;
 }
 

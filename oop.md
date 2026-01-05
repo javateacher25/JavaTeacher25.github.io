@@ -3,7 +3,6 @@ layout: default
 title: Object-Oriented Programming
 ---
 
-[Home](/) · [Development Fundamentals](fundamentals.html) · [Java Fundamentals](java-fundamentals.html) · [OOP](oop.html) · [Advanced Java](advanced-java.html) · [Jakarta EE](jakarta-ee.html) · [Spring Framework](spring.html)
 
 <div class="container mt-4">
   <h1>Object-Oriented Programming (Java)</h1>
